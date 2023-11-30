@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "b9923947-6d2c-45e3-833c-6e00a223e1a9",
+		"name": "Express sql ej5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31434284"
+	},
+	"item": [
+		{
+			"name": "delete product by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/deleteProduct/2"
+			},
+			"response": []
+		}
+	]
+}

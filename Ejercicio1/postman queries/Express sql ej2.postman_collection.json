@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "acdcae1b-b451-4943-8193-ec0d7fdfc83b",
+		"name": "Express sql ej2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31434284"
+	},
+	"item": [
+		{
+			"name": "post insert product1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Cuaderno\",\r\n    \"description\": \"Cuaderno de anilla metálica\",\r\n    \"category_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/insertProduct"
+			},
+			"response": []
+		},
+		{
+			"name": "post insert product2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Bolígrafo\",\r\n    \"description\": \"Bolígrafo de tinta negra\",\r\n    \"category_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/insertProduct"
+			},
+			"response": []
+		},
+		{
+			"name": "post insert category1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Libros\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/insertCategory"
+			},
+			"response": []
+		},
+		{
+			"name": "post insert category2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Escritura\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/insertCategory"
+			},
+			"response": []
+		}
+	]
+}

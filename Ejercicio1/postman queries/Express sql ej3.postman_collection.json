@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "6ed52282-36c4-4209-be04-18c692865002",
+		"name": "Express sql ej3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31434284"
+	},
+	"item": [
+		{
+			"name": "put update product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"título cambiado\",\r\n    \"description\": \"descripción cambiada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/putProduct/2"
+			},
+			"response": []
+		},
+		{
+			"name": "put update category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nombre cambiado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/putCategory/1"
+			},
+			"response": []
+		}
+	]
+}

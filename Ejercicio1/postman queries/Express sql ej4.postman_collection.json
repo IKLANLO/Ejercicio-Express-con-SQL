@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "1f5ae33d-4a2b-40d9-b000-a06f239f6012",
+		"name": "Express sql ej4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31434284"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/getProducts"
+			},
+			"response": []
+		},
+		{
+			"name": "get all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/getCategories"
+			},
+			"response": []
+		},
+		{
+			"name": "get select products categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/getProductsCategories"
+			},
+			"response": []
+		},
+		{
+			"name": "get select product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/getProductbyId/2"
+			},
+			"response": []
+		},
+		{
+			"name": "get select product by id desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/getProductDescent"
+			},
+			"response": []
+		},
+		{
+			"name": "get select category by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/getCategorybyId/1"
+			},
+			"response": []
+		},
+		{
+			"name": "get select product by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/getProductbyName/título cambiado"
+			},
+			"response": []
+		}
+	]
+}
