@@ -1,4 +1,3 @@
-// Ejercicio 1
 const express = require('express')
 const app = express()
 const {db,puerto} = require('./config/database.js')
