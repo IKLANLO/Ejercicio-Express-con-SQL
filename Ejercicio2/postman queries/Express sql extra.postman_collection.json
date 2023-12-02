@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "be2ef079-4a33-4479-b60f-d472ea84beff",
+		"name": "Express sql extra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31434284"
+	},
+	"item": [
+		{
+			"name": "post add new user1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juana\",\r\n    \"last_name\": \"Alonso\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/Users/newUser"
+			},
+			"response": []
+		},
+		{
+			"name": "post add new user2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Julián\",\r\n    \"last_name\": \"Otero\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/Users/newUser"
+			},
+			"response": []
+		},
+		{
+			"name": "post add new order1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Botella de agua\",\r\n    \"user_id\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/Orders/newOrder"
+			},
+			"response": []
+		},
+		{
+			"name": "post add new order2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alfombrilla de ratón\",\r\n    \"user_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/Orders/newOrder"
+			},
+			"response": []
+		},
+		{
+			"name": "put update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nombre modificado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/Users/updateUser/id/2"
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/Users/getUsers"
+			},
+			"response": []
+		},
+		{
+			"name": "get all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/Orders/getOrders"
+			},
+			"response": []
+		},
+		{
+			"name": "get select Users Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/UsersOrders/getUsersOrders"
+			},
+			"response": []
+		},
+		{
+			"name": "get select User by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/Users/getById/id/2"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/Users/DeleteById/id/3"
+			},
+			"response": []
+		}
+	]
+}
