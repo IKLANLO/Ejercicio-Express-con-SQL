@@ -16,4 +16,6 @@ app.use('/Orders', require('./routes/orders.js'))
 
 app.use('/Users', require('./routes/users.js'))
 
+app.use('/UsersOrders', require('./routes/usersorders.js'))
+
 app.listen(puerto, () => console.log(`Server started at port ${puerto}`))
