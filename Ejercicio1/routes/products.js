@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-const db = require('../config/database.js')
 const ProductController = require('../controllers/ProductController.js')
 
 router.get('/createTable', ProductController.createTable)

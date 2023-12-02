@@ -1,9 +1,7 @@
 // Ejercicio 1
 const express = require('express')
 const app = express()
-const db = require('./config/database.js')
-const router = require('./routes/products.js')
-const PORT = 3000
+const {db,puerto} = require('./config/database.js')
 
 app.use(express.json())
 
@@ -21,4 +19,4 @@ app.use('/Products', require('./routes/products.js'))
 
 app.use('/ProductsCategories', require('./routes/productscategories.js'))
 
-app.listen(PORT, () => console.log(`Server started at port ${PORT}`))
+app.listen(puerto, () => console.log(`Server started at port ${puerto}`))
