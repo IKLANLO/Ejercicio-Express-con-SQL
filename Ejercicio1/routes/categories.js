@@ -3,6 +3,8 @@ const router = express.Router()
 const db = require('../config/database.js')
 const CategoryController = require('../controllers/CategoryController.js')
 
+router.get('/createTable', CategoryController.createTable)
+
 router.post('/newCategory', CategoryController.create)
 
 router.put('/updateCategory/id/:id', CategoryController.update)

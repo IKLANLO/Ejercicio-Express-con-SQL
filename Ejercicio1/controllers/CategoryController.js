@@ -1,6 +1,15 @@
 const db = require('../config/database.js')
 
 const CategoryController = {
+  createTable(req, res) {
+    const sqlCategories = `CREATE TABLE Categories(id int AUTO_INCREMENT, name VARCHAR(50), PRIMARY KEY(id))`
+
+    db.query(sqlCategories, (err, result) => {
+      if(err) throw err
+      res.send('Categories table created')
+    })
+  },
+
   create(req, res) {
     const sql = `INSERT INTO Categories (name) 
     VALUES ('${req.body.name}')`
