@@ -3,6 +3,8 @@ const router = express.Router()
 const db = require('../config/database.js')
 const ProductController = require('../controllers/ProductController.js')
 
+router.get('/createTable', ProductController.createTable)
+
 router.post('/newProduct', ProductController.create)
 
 router.put('/updateProduct/id/:id', ProductController.update)

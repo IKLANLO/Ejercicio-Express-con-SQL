@@ -15,35 +15,6 @@ app.use(express.json())
     })
   })
 
-app.get('/createTableProducts', (req, res) => {
-  const sqlProducts = `CREATE TABLE Products(id int AUTO_INCREMENT, title VARCHAR(50), description VARCHAR(250), category_id INT,
-                       PRIMARY KEY(id), FOREIGN KEY (category_id) REFERENCES Categories(id))`
-
-  db.query(sqlProducts, (err, result) => {
-    if(err) throw err
-    res.send('Products table created')
-  })
-})
-
-// app.get('/createTableCategories', (req, res) => {
-//   const sqlCategories = `CREATE TABLE Categories(id int AUTO_INCREMENT, name VARCHAR(50), PRIMARY KEY(id))`
-
-//   db.query(sqlCategories, (err, result) => {
-//     if(err) throw err
-//     res.send('Categories table created')
-//   })
-// })
-
-app.get('/createTableProductsCategories', (req, res) => {
-  const sqlProductsCategories = `CREATE TABLE ProductsCategories(id int AUTO_INCREMENT, product_id INT, category_id INT, PRIMARY KEY(id), 
-                                FOREIGN KEY (product_id) REFERENCES Products(id), FOREIGN KEY (category_id) REFERENCES Categories(id))`
-
-  db.query(sqlProductsCategories, (err, result) => {
-    if(err) throw err
-    res.send('ProductsCategories table created')
-  })
-})
-
 app.use('/Categories', require('./routes/categories.js'))
 
 app.use('/Products', require('./routes/products.js'))

@@ -1,6 +1,16 @@
 const db = require('../config/database.js')
 
 const ProductController = {
+  createTable(req, res) {
+    const sqlProducts = `CREATE TABLE Products(id int AUTO_INCREMENT, title VARCHAR(50), description VARCHAR(250), category_id INT,
+    PRIMARY KEY(id), FOREIGN KEY (category_id) REFERENCES Categories(id))`
+
+    db.query(sqlProducts, (err, result) => {
+      if(err) throw err
+      res.send('Products table created')
+    })
+  },
+
   create(req, res) {
     const sql = `INSERT INTO Products (title, description, category_id) 
     VALUES ('${req.body.title}','${req.body.description}', '${req.body.category_id}')`
